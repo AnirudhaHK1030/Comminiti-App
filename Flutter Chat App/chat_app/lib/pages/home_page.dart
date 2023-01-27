@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
         elevation: 0,
         centerTitle: true,
         title: Text(
-          "Groups",
+          "Comminities",
           style: TextStyle(
               color: Colors.white, fontWeight: FontWeight.bold, fontSize: 27),
         ),
@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage> {
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               leading: const Icon(Icons.group),
               title: const Text(
-                "Groups",
+                "Comminities",
                 style: TextStyle(color: Colors.black),
               ),
             ),
@@ -203,7 +203,7 @@ class _HomePageState extends State<HomePage> {
           return StatefulBuilder(builder: ((context, setState) {
             return AlertDialog(
               title: const Text(
-                "Create a group",
+                "Create a Comminiti",
                 textAlign: TextAlign.left,
               ),
               content: Column(mainAxisSize: MainAxisSize.min, children: [
@@ -260,8 +260,8 @@ class _HomePageState extends State<HomePage> {
                         _isLoading = false;
                       });
                       Navigator.of(context).pop();
-                      showSnackBar(
-                          context, Colors.green, "Group Created Successfully");
+                      showSnackBar(context, Colors.green,
+                          "Comminiti Created Successfully");
                     }
                   },
                   style: ElevatedButton.styleFrom(
@@ -324,7 +324,7 @@ class _HomePageState extends State<HomePage> {
             height: 20,
           ),
           const Text(
-            "You aren't in any group. Tap the add icon to create a group or look for groups using the search button.",
+            "You aren't in any comminities. Tap the add icon to create a group or look for groups using the search button.",
             textAlign: TextAlign.center,
           ),
         ],
